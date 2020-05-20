@@ -16,7 +16,7 @@ $('.navBtn').on('click', function () {
 });
 
 $(window).on('resize', function(){
-    if ($(window).width() > 700) {
+    if ($(window).width() > 650) {
         $('.listMenu').css('display','');
         $('.media').css('display','');
     }
@@ -69,16 +69,16 @@ $('.btn3').on('click',function () {
 
 
 // СЛАЙДЕР
-let rootElem = $('.page2');
+let rootElem = $('.page');
 
 let width =rootElem.width();
 let height =rootElem.height();
 
 $('.screen').width(width);
-$('.screen').height(height);
+$('.screen').height(0.9*height);
 
 $('.screen .slides li').width(width);
-$('.screen .slides li').height(height);
+$('.screen .slides li').height(0.9*(0.9*height));
 
 let slideCnt = $('.screen .slides li').length;
 $('.screen .slides').width(width*slideCnt);
